@@ -10,7 +10,8 @@ import "github.com/oudishen/testdata/pkg"
 type App struct {
 	pkg.CommonField
 
-	AppCode string `db:"app_code" json:"app_code"`
-	AppName string `db:"app_name" json:"app_name"`
-	OrgID   int64  `db:"org_id" json:"org_id"`
+	AppCode  string   `db:"app_code" json:"app_code"`
+	AppName  string   `db:"app_name" json:"app_name"`
+	OrgID    int64    `db:"org_id" json:"org_id"`
+	AppGrade AppGrade `db:"app_grade" json:"app_grade"`
 }
